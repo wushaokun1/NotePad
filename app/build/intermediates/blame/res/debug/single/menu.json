@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_options_menu.xml",
+        "source": "C:\\Users\\USER\\Desktop\\NotePad-master\\app\\src\\main\\res\\menu\\list_options_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\editor_options_menu.xml",
+        "source": "C:\\Users\\USER\\Desktop\\NotePad-master\\app\\src\\main\\res\\menu\\editor_options_menu.xml"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\menu\\editor_options_menu.xml",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\menu\\editor_options_menu.xml"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_context_menu.xml",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\menu\\list_context_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\Desktop\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_context_menu.xml",
+        "source": "C:\\Users\\USER\\Desktop\\NotePad-master\\app\\src\\main\\res\\menu\\list_context_menu.xml"
+    },
+    {
+        "merged": "E:\\gitrepos\\NotePad\\app\\build\\intermediates\\res\\merged\\debug\\menu\\list_options_menu.xml",
+        "source": "E:\\gitrepos\\NotePad\\app\\src\\main\\res\\menu\\list_options_menu.xml"
+    }
+]
