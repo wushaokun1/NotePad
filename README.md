@@ -52,7 +52,7 @@ int[] viewIDs = { android.R.id.text1, R.id.text2};
 这样之后便能显示出long类型的时间，也就是创建距离现在的毫秒数，所以我们还要修改对于的时间类型，我的做法是从存入数据库就修改。
 #### 1.4第四步：
 修改NoteEditor中updateNote()方法中的时间类型.
-
+首先获得long类型的now时间，在运用SimpleDateFormat类设置时间类型，这里我用的是“年/月/天 时/分”，可以根据不同的显示精度进行调整。将now转化成Date类型时间，其实做到这一步，将d放进数据库即可，不过显示得太精密了，太长了，所以我将他修改成我想要得sf类型。String format = sf.format(d)
 ```java
         Long now = Long.valueOf(System.currentTimeMillis());
         SimpleDateFormat sf = new SimpleDateFormat("yy/MM/dd HH:mm");
@@ -106,9 +106,8 @@ int[] viewIDs = { android.R.id.text1, R.id.text2};
 ```java
  setContentView(R.layout.searchview);
 ```
-#### 2.3第三步：
-设置searchview监听器：
-
+#### 2.3第三步：设置searchview监听器
+首先找到search组件，创造searchView得响应时间，根据传入得s进行搜索，然后写下selection语句NotePad.Notes.COLUMN_NAME_TITLE + " GLOB '*" + s + "*'"，运用getContentResolver().query对SQLite里面得数据进行搜索，PROJECTION则是在设置时间戳得时候已经书写好，如果s为空，则是把所有信息显示出来。最后更新adapter
 ```java
 private void SearchView(final SimpleCursorAdapter adapter) {
         SearchView searchView = findViewById(R.id.search2);
